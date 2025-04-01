@@ -5,21 +5,21 @@ class Person {
         this._height = height
     }
     get name(){
-        return this._name.split(" ")[0]
+        return this._name
     }
     set name(newName){
-        this._name = `${newName} ${this._name.split(" ")[1] || ""}`;
+           this._name = newName
     }
     get age(){
-        return this._age.split(" ")[0]
+        return this._age
     }
     set age(newAge){
-        this._age = `${newAge} ${this._age.split(" ")[1] || ""}`;
+        this._age = newAge
     }
     get height(){
-        return this._height.split(" ")[0]
+        return this._height
     }
     set height(newHeight){
-        this._height = `${newHeight} ${this._height.split(" ")[1] || ""}`;
+        this._height = newHeight
     }
 }

@@ -4,19 +4,23 @@ class Account {
         this._limit = limit
     }
     get balance(){
-        return this._balance.split(" ")[0]
+        return this._balance
     }
     set balance(newBalance){
-        this._balance = `${newBalance} ${this._balance.split(" ")[1] || ""}`;
+        this._balance = newBalance
     }
     get limit(){
-        return this._limit.split(" ")[0]
+        return this._limit
     }
     set limit(newLimit){
-        this._limit = `${newLimit} ${this._limit.split(" ")[1] || ""}`;
+        this._limit = newLimit
     }
     withdrawMoney(toBeWithdraw){
-        if (toBeWithdraw -= this.balance);
-            //
+        if (this.balance + this.limit >= toBeWithdraw) {
+            this.balance - toBeWithdraw
+        }
+        else {
+            throw new Error("*-*")
+        }
     }
 }
