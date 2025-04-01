@@ -27,12 +27,3 @@ class Manufacturer { // Classe Fabricante: Têm os Parâmetros Nome e Carros, e 
         });
     }
 }
-const V8 = new Engine("V8");
-const Turbo = new Engine("Turbo");
-
-const manufacturerA = new Manufacturer("Manufacturer A");
-const manufacturerB = new Manufacturer("Manufacturer B");
-
-const car1 = new Car("Fusca", V8, manufacturerA);
-const car2 = new Car("Civic", Turbo, manufacturerB);
-const car3 = new Car("BMW X1", V8, manufacturerA);
